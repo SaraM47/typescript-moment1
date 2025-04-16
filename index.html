@@ -7,7 +7,22 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>Kursapplikation</h1>
+  
+      <form id="course-form">
+        <input type="text" id="code" placeholder="Kurskod" required>
+        <input type="text" id="name" placeholder="Kursnamn" required>
+        <input type="text" id="progression" placeholder="Progression (A, B, C)" required>
+        <input type="url" id="syllabus" placeholder="Länk till kursplan" required />
+        <button type="submit">Lägg till kurs</button>
+      </form>
+  
+      <input type="text" id="filter" placeholder="Filtrera kurser...">
+  
+      <ul id="course-list"></ul>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
