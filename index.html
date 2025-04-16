@@ -1,25 +1,42 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
     <title>Moment 1 - Kursapplikation</title>
   </head>
   <body>
     <div id="app">
       <h1>Kursapplikation</h1>
-  
+
       <form id="course-form">
-        <input type="text" id="code" placeholder="Kurskod" required>
-        <input type="text" id="name" placeholder="Kursnamn" required>
-        <input type="text" id="progression" placeholder="Progression (A, B, C)" required>
-        <input type="url" id="syllabus" placeholder="Länk till kursplan" required>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="code">Kurskod</label>
+            <input type="text" id="code" placeholder="t.ex. DT208G" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Kursnamn</label>
+            <input type="text" id="name" placeholder="t.ex. Webbutveckling" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="progression">Progression</label>
+          <input type="text" id="progression" placeholder="A, B, C" required>
+        </div>
+
+        <div class="form-group">
+          <label for="syllabus">Länk till kursplan</label>
+          <input type="url" id="syllabus" placeholder="https://..." required>
+        </div>
+
         <button type="submit">Lägg till kurs</button>
       </form>
-  
+
       <input type="text" id="filter" placeholder="Filtrera kurser...">
-  
       <ul id="course-list"></ul>
     </div>
 
