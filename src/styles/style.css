@@ -24,14 +24,14 @@ body {
   margin-top: 6rem;
 }
 
-/* Rubrik */
+/* Heading 1 */
 h1 {
   text-align: left;
   color: #3a3a3a;
   margin-bottom: 1.5rem;
 }
 
-/* Formulär */
+/* Form */
 #course-form {
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ h1 {
   background-color: #5db1cb;
 }
 
-/* Filterfält */
+/* Filter field */
 #filter {
   width: 100%;
   padding: 0.75rem;
@@ -98,7 +98,7 @@ h1 {
   border: 1px solid #ccc;
 }
 
-/* Kurslista */
+/* Course list */
 #course-list {
   list-style: none;
   padding: 0;
@@ -139,7 +139,8 @@ h1 {
   background-color: #e60000;
 }
 
-/* Responsivitet */
+
+/* Responsiv design */
 @media (max-width: 600px) {
   h1 {
     font-size: 1.2rem;
