@@ -26,3 +26,25 @@ interface CourseInfo {
     }
   }
   
+
+// Funktion som sparar kurslistan till localStorage
+function saveCourses(): void {
+    localStorage.setItem('courses', JSON.stringify(courses)); // Konvertera till text och spara
+  }
+  
+  // Funktion som visar alla kurser på sidan (eller en filtrerad lista)
+  function renderCourses(filteredCourses: CourseInfo[] = courses): void {
+    courseList.innerHTML = ''; // Töm listan först
+  
+    // För varje kurs, skapa ett <li>-element med info och en "Radera"-knapp
+    filteredCourses.forEach(course => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <strong>${course.code}</strong>: ${course.name} (${course.progression}) - 
+        <a href="${course.syllabus}" target="_blank">Kursplan</a>
+        <button class="delete-btn" data-code="${course.code}">Radera</button>
+      `;
+      courseList.appendChild(li);
+    });
+  
+}
