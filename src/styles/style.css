@@ -75,8 +75,8 @@ h1 {
 #course-form button {
   max-width: 30%;
   padding: 0.75rem;
-  background-color: #4c9baf;
-  color: white;
+  background-color: #7bd3ea;
+  color: black;
   border: none;
   border-radius: 3rem;
   font-size: 1rem;
@@ -85,7 +85,7 @@ h1 {
 }
 
 #course-form button:hover {
-  background-color: #458ba0;
+  background-color: #5db1cb;
 }
 
 /* Filterfält */
@@ -128,7 +128,7 @@ h1 {
   margin-left: 1rem;
   background-color: #ff4d4d;
   border: none;
-  color: white;
+  color: black;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
@@ -167,9 +167,7 @@ h1 {
   .delete-btn {
     margin-top: 0.5rem;
   }
-
-
-#course-form button {
-max-width: 100%;
-}
+  #course-form button {
+    max-width: 100%;
+  }
 }
