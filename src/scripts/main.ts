@@ -1,4 +1,4 @@
-// Definierar en typ för kursernas data. Varje kurs bör ha dessa fyra egenskaper.
+// Defines a type for the course data. Every course should have these four properties.
 interface CourseInfo {
   code: string;
   name: string;
