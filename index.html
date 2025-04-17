@@ -1,49 +1,55 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
-    <script type="module" src="src/scripts/main.ts"></script>
-    <title>Moment 1 - Kursapplikation</title>
-  </head>
-  <body>
-    <div id="app">
-      <h1>Kursapplikation</h1>
+<html lang="sv">
 
-      <form id="course-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="code">Kurskod</label>
-            <input type="text" id="code" placeholder="t.ex. DT057G" required>
-          </div>
-          <div class="form-group">
-            <label for="name">Kursnamn</label>
-            <input type="text" id="name" placeholder="t.ex. Webbutveckling I" required>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <script type="module" src="src/scripts/main.ts"></script>
+  <title>Moment 1 - Kursapplikation</title>
+</head>
 
+<body>
+  <main id="app">
+    <h1>Kursapplikation</h1>
+
+    <form id="course-form">
+      <div class="form-row">
         <div class="form-group">
-          <label for="progression">Progression</label>
-          <select id="progression" required>
-            <option value="">Välj progression</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-          </select>
+          <label for="code">Kurskod</label>
+          <input type="text" id="code" placeholder="t.ex. DT057G" required>
         </div>
-
         <div class="form-group">
-          <label for="syllabus">Länk till kursplan</label>
-          <input type="url" id="syllabus" placeholder="https://..." required>
+          <label for="name">Kursnamn</label>
+          <input type="text" id="name" placeholder="t.ex. Webbutveckling I" required>
         </div>
+      </div>
 
-        <button type="submit">Lägg till kurs</button>
-      </form>
+      <div class="form-group">
+        <label for="progression">Progression</label>
+        <select id="progression" required>
+          <option value="">Välj progression</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+      </div>
 
+      <div class="form-group">
+        <label for="syllabus">Länk till kursplan</label>
+        <input type="url" id="syllabus" placeholder="https://..." required>
+      </div>
+
+      <button type="submit">Lägg till kurs</button>
+    </form>
+
+    <div class="form-group">
+      <label for="filter">Filtrera kurser</label>
       <input type="text" id="filter" placeholder="Filtrera kurser...">
-      <ul id="course-list"></ul>
     </div>
-  </body>
+    <ul id="course-list"></ul>
+  </main>
+</body>
+
 </html>
